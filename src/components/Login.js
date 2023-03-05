@@ -22,7 +22,12 @@ const Login = () => {
 
   const login = (e) => {
     e.preventDefault();
+
+    //Send post request to server for user
+    //if successful, Set cookie
+
     // set cookie here
+    document.cookie ="loggedIn=true;max-age=60*1000"
     // set loggedIn = true and max-age = 60*1000 (one minute)
 
     navigate("/");
